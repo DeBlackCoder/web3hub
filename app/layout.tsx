@@ -11,9 +11,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Web3Hub",
+  description: "Web3 dashboard",
+  generator: "Web3Hub",
 }
 
 export default function RootLayout({
@@ -29,8 +29,8 @@ export default function RootLayout({
             <AdminProvider>{children}</AdminProvider>
           </ProfileProvider>
         </WalletProvider>
-        <Analytics />
       </body>
+        <Analytics />
     </html>
   )
 }
